@@ -1,0 +1,199 @@
+﻿<Window x:Class="ArticleAboutVolleyball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArticleAboutVolleyball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Figure WrapDirection="Left" Width="400" HorizontalAnchor="PageRight" VerticalAnchor="PageTop">
+                        <BlockUIContainer>
+                            <Image Source="Data\volleyball.jpg"/>
+                        </BlockUIContainer>
+                    </Figure>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Волейбол">
+                        <Bold>Волейбол</Bold>
+                    </Hyperlink> (англ.
+                    <Italic>volleyball</Italic> от volley — «удар с лёту» и ball — «мяч») — вид спорта, командная спортивная игра, 
+                    в процессе которой две команды соревнуются на специальной площадке, разделённой сеткой, стремясь направить мяч на сторону соперника таким образом, 
+                    чтобы он приземлился на площадке противника (добить до пола), либо чтобы игрок защищающейся команды допустил ошибку. При этом для организации атаки игрокам одной команды разрешается не более трёх касаний мяча подряд (в дополнение к касанию на блоке).
+
+                </Paragraph>
+                <!--<Paragraph>
+                    <Figure WrapDirection="Both">
+                        <BlockUIContainer>
+                            <Image Source="Data\volleyball.jpg" Width="400" HorizontalAlignment="Right"/>
+                        </BlockUIContainer>
+                    </Figure>
+                </Paragraph>-->
+                <Paragraph FontSize="18" FontWeight="Bold">
+                    Правила игры
+                </Paragraph>
+                <Paragraph>
+                    Игра ведётся на прямоугольной площадке размером 18х9 метров. Волейбольная площадка разделена посередине сеткой. Высота сетки для мужчин — 2,43 м, для женщин — 2,24 м.
+                </Paragraph>
+                <Paragraph>
+                    Игра ведётся сферическим мячом окружностью 65—67 сантиметров, массой 260—280 г.
+                </Paragraph>
+                <Paragraph>
+                    Каждая из двух команд может иметь в составе до 14 игроков, на поле во время игры могут находиться 6 игроков. 
+                    Цель игры — атакующим ударом добить мяч до пола, то есть до игровой поверхности площадки половины противника, или заставить его ошибиться.
+                </Paragraph>
+                <Paragraph>
+                    Игра начинается вводом мяча при помощи подачи согласно жребию. После ввода мяча подачей и успешного розыгрыша подача переходит к той команде, которая выиграла очко.
+                Площадка по количеству игроков условно разделена на 6 зон. После каждого перехода право подачи переходит от одной команды к другой в результате розыгрыша очка, 
+                    игроки перемещаются в следующую зону по часовой стрелке.
+                </Paragraph>
+                <Paragraph FontSize="18" FontWeight="Bold">
+                    Виды наказаний за нарушение правил
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            Предупреждение
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Замечание
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Удаление
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Дисквалификация
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph FontSize="18" FontWeight="Bold">
+                    Амплуа игроков
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.4*"/>
+                        <TableColumn Width="1.5*"/>
+                        <TableColumn Width="5*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow Background="Gray">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    №
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    Амплуа
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    Характеристика
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightCyan">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Доигровщик
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Атакуют с краёв сетки и «пайп»; вместе с игроком либеро участвуют в приёме. 
+                                    Основная зона ответственности — приём подачи соперника и атака со сложных, неудобных передач на организованном блоке.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Диагональный
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Самые мощные, высокие и прыгучие игроки команды. 
+                                    Атакуют с передней и с задней линии (обычно из зоны 2-го или 1-го номера), не участвуют в приёме, 
+                                    тем самым всегда готовы к атаке.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightCyan">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Центральный блокирующий
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Как правило, самые высокорослые игроки. Основная зона ответственности — блокирование атак соперника. 
+                                    Также сами атакуют из 3-й зоны по невысоким скоростным передачам («взлёт», «атака первым темпом»).
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    4
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Связующий
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Отдают передачи, определяют игру и варианты атаки своих партнёров. 
+                                    Связующие могут сами набирать очки за счёт скидок (или неожиданных ударов «по второму мячу» вместо передачи) и подач.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightCyan">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    5
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Либеро
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Основной принимающий и защитник, рост обычно менее 190 см. 
+                                    Обычно либеро замещает на задней линии центрального блокирующего.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
